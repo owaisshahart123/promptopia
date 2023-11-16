@@ -51,7 +51,7 @@ export default function Nav(){
                 </button>
 
                 <Link href="/profile">
-                <Image src={Logo}
+                <Image src={session?.user.image}
                 width={37}
                 height={37}
                 className=" rounded-full "
@@ -78,7 +78,7 @@ export default function Nav(){
            <div className=" sm:hidden flex relative">
            {session?.user ? (
             <div className=" flex">
-            <Image src={Logo}
+            <Image src={session?.user.image}
                 width={37}
                 height={37}
                 className=" rounded-full "
